@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Header from './Header';
+import Card from './Card';
 
 function App() {
   const [allCountry, setAllCountry] = useState([]);
@@ -10,7 +12,6 @@ function App() {
         const res = await fetch("https://xcountries-backend.azurewebsites.net/all");
         const data = await res.json();
         setAllCountry(data);
-        console.log(data);
       } catch (error) {
         console.log(`Error fetching data: ${error}`)
       }
@@ -22,19 +23,11 @@ function App() {
 
   return (
     <>
-    <h1>All Countries</h1>
+    <Header/>
 
-    <div className='parent'>
+    <div className='container'>
       {
-      allCountry.map((country)=>{
-        return <>
-        
-        <div className='card'>
-        <img src={country.flag} alt={country.name}/>
-        <p className='title'>{country.name}</p>
-      </div>
-        </>
-      })
+      allCountry.map((country)=><Card country={country}/>)
       }
       
     </div>

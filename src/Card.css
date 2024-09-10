@@ -1,0 +1,33 @@
+.card {
+border: 1px solid #ddd;
+border-radius: 1rem;
+background-color: #eeeeee;
+padding: 1rem 1.8rem 1.5rem;
+width: 15rem;
+cursor: pointer;
+transition: all 0.5s;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #f8f7f7;
+}
+
+.container_img {
+  height: 10rem;
+  width: 10rem;
+
+}
+
+.container_img img {
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.card_title {
+font-size: 1.8rem;
+font-weight: 600;
+text-align: center;
+text-wrap:balance;
+}

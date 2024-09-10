@@ -1,27 +1,7 @@
-.card {
-  border: 1px solid #ddd;
+.container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: .5rem;
-  width: 10rem;
-}
-
-.card img {
-  width: 100%;
-  overflow: none;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.parent {
-  display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
-  margin: 1rem 3rem;
+  gap: 1rem;
+  margin: 2.5rem;
   
 }
